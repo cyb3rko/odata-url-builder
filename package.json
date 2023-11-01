@@ -6,7 +6,7 @@
   "description": "Builder Application for OData URLs",
   "type": "module",
   "scripts": {
-    "start": "ui5 serve -o index.html"
+    "start": "ui5 serve -o index.html --accept-remote-connections"
   },
   "devDependencies": {
     "eslint": "5.16.x",
