@@ -1,0 +1,49 @@
+{
+	"_version": "1.58.0",
+	"sap.app": {
+		"id": "odata.url.builder",
+		"title": "OData URL Builder",
+		"description": "Builder Application for OData URLs",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.108.0",
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {}
+			}
+		},
+		"rootView": {
+			"viewName": "ui5.walkthrough.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			],
+			"js": [
+				{ "uri": "logic/InputExtractor.js" },
+				{ "uri": "logic/RegexExpert.js" } 
+			]
+		},
+        "contentDensities": {
+            "compact": false,
+			"cozy": false
+        }
+    }
+}

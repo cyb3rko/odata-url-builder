@@ -1,0 +1,98 @@
+<mvc:View
+	controllerName="ui5.walkthrough.controller.MainPage"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+>
+	<Panel
+		headerText="Data Input"
+		class="sapUiResponsiveMargin"
+		width="auto"
+	>
+		<VBox class="sapUiContentPadding">
+			<HBox>
+				<FormattedText
+					htmlText="OData Service Root:"
+					class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+					width="140px"
+				/>
+				<Input
+					id="endpoint"
+					liveChange = "onInputChanged"
+					type="Url">
+					<layoutData>
+						<FlexItemData growFactor="0.6"/>
+					</layoutData>
+				</Input>
+				<core:Icon
+					id="icon"
+					class="icon"/>
+			</HBox>
+			<HBox>
+				<FormattedText
+					htmlText="EntitySet Name:"
+					class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+					width="140px"
+				/>
+				<Input
+					id="entityset"
+					liveChange = "onInputChanged">
+					<layoutData>
+						<FlexItemData growFactor="0.6"/>
+					</layoutData>
+				</Input>
+			</HBox>
+			<HBox>
+				<FormattedText
+					htmlText="Count Entities:"
+					class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+					width="140px"
+				/>
+				<Switch
+					id="countSwitch"
+					state="false"
+					customTextOn="Yes"
+					customTextOff="No"/>
+			</HBox>
+		</VBox>
+	</Panel>
+	
+	<Panel
+		headerText="Result"
+		class="sapUiResponsiveMargin"
+		width="auto"
+	>
+		<VBox>
+			<HBox>
+				<Switch
+					id="encoding"
+					state="false"
+					customTextOn="Yes"
+					customTextOff="No"/>
+				<FormattedText
+					htmlText="Apply URL Encoding"
+					class="switchDescription"/>
+			</HBox>
+			<FormattedText
+				id="result"
+				class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+			/>
+			<HBox>
+				<Button
+					id="copy"
+					text="Copy"
+					icon="sap-icon://copy"
+					class="iconButton"
+					visible="false"
+					press="copyUrl"/>
+				<Button
+					id="open"
+					text="Open"
+					icon="sap-icon://inspect"
+					class="iconButton"
+					visible="false"
+					press="openUrl"/>
+			</HBox>
+		</VBox>
+	</Panel>
+</mvc:View>

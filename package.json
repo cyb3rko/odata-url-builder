@@ -1,0 +1,16 @@
+{
+  "name": "odata.url.builder",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Cyb3rKo",
+  "description": "Builder Application for OData URLs",
+  "type": "module",
+  "scripts": {
+    "start": "ui5 serve -o index.html"
+  },
+  "devDependencies": {
+    "eslint": "5.16.x",
+    "@sap/eslint-plugin-ui5-jsdocs": "2.0.x",
+    "@sapui5/ts-types": "1.92.x"
+  }
+}

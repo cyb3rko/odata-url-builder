@@ -1,0 +1,28 @@
+html[dir="ltr"] .myAppDemoWT .myCustomButton.sapMBtn {
+	margin-right: 0.125rem
+}
+
+html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
+	margin-left: 0.125rem
+}
+
+.myAppDemoWT .myCustomText {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.icon {
+	font-size: 1.5rem;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.iconButton {
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.switchDescription {
+	margin-top: 13px;
+	margin-left: 5px;
+}
