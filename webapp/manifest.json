@@ -37,7 +37,7 @@
 				}
 			],
 			"js": [
-				{ "uri": "logic/InputExtractor.js" },
+				{ "uri": "logic/InputManager.js" },
 				{ "uri": "logic/RegexExpert.js" } 
 			]
 		},

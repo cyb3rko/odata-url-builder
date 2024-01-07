@@ -8,11 +8,22 @@
 		<App class="myAppDemoWT">
 			<pages>
 				<Page title="OData URL Builder">
-					<content>
-						<mvc:XMLView
-							viewName="ui5.walkthrough.view.MainPage"
-						/>
-					</content>
+					<!-- <FlexBox
+						justifyContent="Center"
+					>
+						<SegmentedButton
+							class="topSegmentButton"
+							selectionChange="handleVersionChange"
+						>
+							<items>
+								<SegmentedButtonItem text="OData V2" />
+								<SegmentedButtonItem text="OData V4" />
+							</items>
+						</SegmentedButton>
+					</FlexBox> -->
+					<mvc:XMLView
+						viewName="ui5.walkthrough.view.MainPage"
+					/>
 				</Page>
 			</pages>
 		</App>

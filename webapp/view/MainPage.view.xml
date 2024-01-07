@@ -5,7 +5,7 @@
 	xmlns:mvc="sap.ui.core.mvc"
 >
 	<Panel
-		headerText="Data Input"
+		headerText="Setup"
 		class="sapUiResponsiveMargin"
 		width="auto"
 	>
@@ -25,12 +25,12 @@
 					</layoutData>
 				</Input>
 				<core:Icon
-					id="icon"
+					id="icon1"
 					class="icon"/>
 			</HBox>
 			<HBox>
 				<FormattedText
-					htmlText="EntitySet Name:"
+					htmlText="Entity Set Name:"
 					class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
 					width="140px"
 				/>
@@ -41,18 +41,85 @@
 						<FlexItemData growFactor="0.6"/>
 					</layoutData>
 				</Input>
+				<core:Icon
+					id="icon2"
+					class="icon"/>
 			</HBox>
+		</VBox>
+	</Panel>
+
+	<Panel
+		headerText="Details"
+		class="sapUiResponsiveMargin"
+		width="auto"
+	>
+		<VBox class="sapUiContentPadding">
+			<!-- <SegmentedButton selectionChange="handleSelectionChange">
+				<items>
+					<SegmentedButtonItem text="EntitySet" />
+					<SegmentedButtonItem text="Entity" />
+				</items>
+			</SegmentedButton> -->
 			<HBox>
 				<FormattedText
 					htmlText="Count Entities:"
 					class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
-					width="140px"
+					width="100px"
 				/>
 				<Switch
 					id="countSwitch"
 					state="false"
 					customTextOn="Yes"
 					customTextOff="No"/>
+				<FormattedText
+					htmlText="Inline Count Entities:"
+					class="sapThemeHighlight-asColor myCustomText marginLeftTop"
+					width="140px"
+				/>
+				<Switch
+					id="countInlineSwitch"
+					state="false"
+					customTextOn="Yes"
+					customTextOff="No"/>
+			</HBox>
+			<HBox>
+				<FormattedText
+					htmlText="Top:"
+					class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+					width="140px"
+				/>
+				<StepInput
+					id="top_input"
+					min="0"
+					largerStep="5"
+					textAlign="Center"/>
+			</HBox>
+			<HBox>
+				<FormattedText
+					htmlText="Skip:"
+					class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+					width="140px"
+				/>
+				<StepInput
+					id="skip_input"
+					min="0"
+					largerStep="5"
+					validationMode="LiveChange"
+					textAlign="Center"/>
+			</HBox>
+			<HBox>
+				<FormattedText
+					htmlText="Order by (comma separated):"
+					class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+					width="140px"
+				/>
+				<Input
+					id="orderby_input"
+					liveChange = "onInputChanged">
+					<layoutData>
+						<FlexItemData growFactor="0.6"/>
+					</layoutData>
+				</Input>
 			</HBox>
 		</VBox>
 	</Panel>

@@ -26,3 +26,12 @@ html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
 	margin-top: 13px;
 	margin-left: 5px;
 }
+
+.topSegmentButton {
+	margin-top: 10px;
+}
+
+.marginLeftTop {
+	margin-top: 1rem;
+	margin-left: 30px;
+}
